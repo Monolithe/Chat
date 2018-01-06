@@ -2,7 +2,7 @@
 
 #include "connection.h"
 
-int main() {
+void test_connection() {
     init();
 
     connection *conn = set_connection("localhost", 80);
@@ -21,6 +21,9 @@ int main() {
     free(received);
 
     close_connection(conn);
+}
 
+int main() {
+    test_connection();
     return 0;
 }

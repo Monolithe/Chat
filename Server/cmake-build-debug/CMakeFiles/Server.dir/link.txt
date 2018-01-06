@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/Server.dir/main.c.o CMakeFiles/Server.dir/connection.c.o  -o Server 
+/usr/bin/cc -g   CMakeFiles/Server.dir/main.c.o CMakeFiles/Server.dir/connection.c.o CMakeFiles/Server.dir/chat_message.c.o  -o Server 

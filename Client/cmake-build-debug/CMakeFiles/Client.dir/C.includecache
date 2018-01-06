@@ -6,17 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/maxime/Programmes/C/Chat/Client/main.c
-stdio.h
+/home/maxime/Programmes/C/Chat/Client/chat_message.c
+chat_message.h
+/home/maxime/Programmes/C/Chat/Client/chat_message.h
+
+/home/maxime/Programmes/C/Chat/Client/chat_message.h
+stdlib.h
 -
-socket.h
-/home/maxime/Programmes/C/Chat/Client/socket.h
+connection.h
+/home/maxime/Programmes/C/Chat/Client/connection.h
 
-/home/maxime/Programmes/C/Chat/Client/socket.c
-socket.h
-/home/maxime/Programmes/C/Chat/Client/socket.h
+/home/maxime/Programmes/C/Chat/Client/connection.c
+connection.h
+/home/maxime/Programmes/C/Chat/Client/connection.h
 
-/home/maxime/Programmes/C/Chat/Client/socket.h
+/home/maxime/Programmes/C/Chat/Client/connection.h
 stdio.h
 -
 string.h
@@ -43,4 +47,10 @@ stdlib.h
 -
 errno.h
 -
+
+/home/maxime/Programmes/C/Chat/Client/main.c
+stdio.h
+-
+connection.h
+/home/maxime/Programmes/C/Chat/Client/connection.h
 

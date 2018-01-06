@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/chat_message.c">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/chat_message.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/home/maxime/Programmes/C/Chat/Server/connection.c">
 			<Option target="Server"/>
 		</Unit>

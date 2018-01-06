@@ -123,6 +123,60 @@ Client/fast:
 	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/build
 .PHONY : Client/fast
 
+chat_message.o: chat_message.c.o
+
+.PHONY : chat_message.o
+
+# target to build an object file
+chat_message.c.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/chat_message.c.o
+.PHONY : chat_message.c.o
+
+chat_message.i: chat_message.c.i
+
+.PHONY : chat_message.i
+
+# target to preprocess a source file
+chat_message.c.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/chat_message.c.i
+.PHONY : chat_message.c.i
+
+chat_message.s: chat_message.c.s
+
+.PHONY : chat_message.s
+
+# target to generate assembly for a file
+chat_message.c.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/chat_message.c.s
+.PHONY : chat_message.c.s
+
+connection.o: connection.c.o
+
+.PHONY : connection.o
+
+# target to build an object file
+connection.c.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/connection.c.o
+.PHONY : connection.c.o
+
+connection.i: connection.c.i
+
+.PHONY : connection.i
+
+# target to preprocess a source file
+connection.c.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/connection.c.i
+.PHONY : connection.c.i
+
+connection.s: connection.c.s
+
+.PHONY : connection.s
+
+# target to generate assembly for a file
+connection.c.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/connection.c.s
+.PHONY : connection.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -150,33 +204,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/main.c.s
 .PHONY : main.c.s
 
-socket.o: socket.c.o
-
-.PHONY : socket.o
-
-# target to build an object file
-socket.c.o:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/socket.c.o
-.PHONY : socket.c.o
-
-socket.i: socket.c.i
-
-.PHONY : socket.i
-
-# target to preprocess a source file
-socket.c.i:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/socket.c.i
-.PHONY : socket.c.i
-
-socket.s: socket.c.s
-
-.PHONY : socket.s
-
-# target to generate assembly for a file
-socket.c.s:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/socket.c.s
-.PHONY : socket.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Client"
+	@echo "... chat_message.o"
+	@echo "... chat_message.i"
+	@echo "... chat_message.s"
+	@echo "... connection.o"
+	@echo "... connection.i"
+	@echo "... connection.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... socket.o"
-	@echo "... socket.i"
-	@echo "... socket.s"
 .PHONY : help
 
 

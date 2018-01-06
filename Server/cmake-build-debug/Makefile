@@ -123,6 +123,33 @@ Server/fast:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
+chat_message.o: chat_message.c.o
+
+.PHONY : chat_message.o
+
+# target to build an object file
+chat_message.c.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/chat_message.c.o
+.PHONY : chat_message.c.o
+
+chat_message.i: chat_message.c.i
+
+.PHONY : chat_message.i
+
+# target to preprocess a source file
+chat_message.c.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/chat_message.c.i
+.PHONY : chat_message.c.i
+
+chat_message.s: chat_message.c.s
+
+.PHONY : chat_message.s
+
+# target to generate assembly for a file
+chat_message.c.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/chat_message.c.s
+.PHONY : chat_message.c.s
+
 connection.o: connection.c.o
 
 .PHONY : connection.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Server"
+	@echo "... chat_message.o"
+	@echo "... chat_message.i"
+	@echo "... chat_message.s"
 	@echo "... connection.o"
 	@echo "... connection.i"
 	@echo "... connection.s"

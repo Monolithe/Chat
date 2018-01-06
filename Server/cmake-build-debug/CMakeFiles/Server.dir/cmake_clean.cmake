@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Server.dir/main.c.o"
   "CMakeFiles/Server.dir/connection.c.o"
+  "CMakeFiles/Server.dir/chat_message.c.o"
   "Server.pdb"
   "Server"
 )

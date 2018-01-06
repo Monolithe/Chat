@@ -81,43 +81,69 @@ CMakeFiles/Client.dir/main.c.o.provides: CMakeFiles/Client.dir/main.c.o.requires
 CMakeFiles/Client.dir/main.c.o.provides.build: CMakeFiles/Client.dir/main.c.o
 
 
-CMakeFiles/Client.dir/socket.c.o: CMakeFiles/Client.dir/flags.make
-CMakeFiles/Client.dir/socket.c.o: ../socket.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Client.dir/socket.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Client.dir/socket.c.o   -c /home/maxime/Programmes/C/Chat/Client/socket.c
+CMakeFiles/Client.dir/connection.c.o: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/connection.c.o: ../connection.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Client.dir/connection.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Client.dir/connection.c.o   -c /home/maxime/Programmes/C/Chat/Client/connection.c
 
-CMakeFiles/Client.dir/socket.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Client.dir/socket.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maxime/Programmes/C/Chat/Client/socket.c > CMakeFiles/Client.dir/socket.c.i
+CMakeFiles/Client.dir/connection.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Client.dir/connection.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maxime/Programmes/C/Chat/Client/connection.c > CMakeFiles/Client.dir/connection.c.i
 
-CMakeFiles/Client.dir/socket.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Client.dir/socket.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maxime/Programmes/C/Chat/Client/socket.c -o CMakeFiles/Client.dir/socket.c.s
+CMakeFiles/Client.dir/connection.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Client.dir/connection.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maxime/Programmes/C/Chat/Client/connection.c -o CMakeFiles/Client.dir/connection.c.s
 
-CMakeFiles/Client.dir/socket.c.o.requires:
+CMakeFiles/Client.dir/connection.c.o.requires:
 
-.PHONY : CMakeFiles/Client.dir/socket.c.o.requires
+.PHONY : CMakeFiles/Client.dir/connection.c.o.requires
 
-CMakeFiles/Client.dir/socket.c.o.provides: CMakeFiles/Client.dir/socket.c.o.requires
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/socket.c.o.provides.build
-.PHONY : CMakeFiles/Client.dir/socket.c.o.provides
+CMakeFiles/Client.dir/connection.c.o.provides: CMakeFiles/Client.dir/connection.c.o.requires
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/connection.c.o.provides.build
+.PHONY : CMakeFiles/Client.dir/connection.c.o.provides
 
-CMakeFiles/Client.dir/socket.c.o.provides.build: CMakeFiles/Client.dir/socket.c.o
+CMakeFiles/Client.dir/connection.c.o.provides.build: CMakeFiles/Client.dir/connection.c.o
+
+
+CMakeFiles/Client.dir/chat_message.c.o: CMakeFiles/Client.dir/flags.make
+CMakeFiles/Client.dir/chat_message.c.o: ../chat_message.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Client.dir/chat_message.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Client.dir/chat_message.c.o   -c /home/maxime/Programmes/C/Chat/Client/chat_message.c
+
+CMakeFiles/Client.dir/chat_message.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Client.dir/chat_message.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maxime/Programmes/C/Chat/Client/chat_message.c > CMakeFiles/Client.dir/chat_message.c.i
+
+CMakeFiles/Client.dir/chat_message.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Client.dir/chat_message.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maxime/Programmes/C/Chat/Client/chat_message.c -o CMakeFiles/Client.dir/chat_message.c.s
+
+CMakeFiles/Client.dir/chat_message.c.o.requires:
+
+.PHONY : CMakeFiles/Client.dir/chat_message.c.o.requires
+
+CMakeFiles/Client.dir/chat_message.c.o.provides: CMakeFiles/Client.dir/chat_message.c.o.requires
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/chat_message.c.o.provides.build
+.PHONY : CMakeFiles/Client.dir/chat_message.c.o.provides
+
+CMakeFiles/Client.dir/chat_message.c.o.provides.build: CMakeFiles/Client.dir/chat_message.c.o
 
 
 # Object files for target Client
 Client_OBJECTS = \
 "CMakeFiles/Client.dir/main.c.o" \
-"CMakeFiles/Client.dir/socket.c.o"
+"CMakeFiles/Client.dir/connection.c.o" \
+"CMakeFiles/Client.dir/chat_message.c.o"
 
 # External object files for target Client
 Client_EXTERNAL_OBJECTS =
 
 Client: CMakeFiles/Client.dir/main.c.o
-Client: CMakeFiles/Client.dir/socket.c.o
+Client: CMakeFiles/Client.dir/connection.c.o
+Client: CMakeFiles/Client.dir/chat_message.c.o
 Client: CMakeFiles/Client.dir/build.make
 Client: CMakeFiles/Client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,7 +152,8 @@ CMakeFiles/Client.dir/build: Client
 .PHONY : CMakeFiles/Client.dir/build
 
 CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/main.c.o.requires
-CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/socket.c.o.requires
+CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/connection.c.o.requires
+CMakeFiles/Client.dir/requires: CMakeFiles/Client.dir/chat_message.c.o.requires
 
 .PHONY : CMakeFiles/Client.dir/requires
 

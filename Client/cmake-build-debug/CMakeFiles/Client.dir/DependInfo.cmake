@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/maxime/Programmes/C/Chat/Client/chat_message.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/chat_message.c.o"
+  "/home/maxime/Programmes/C/Chat/Client/connection.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/connection.c.o"
   "/home/maxime/Programmes/C/Chat/Client/main.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/main.c.o"
-  "/home/maxime/Programmes/C/Chat/Client/socket.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/socket.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

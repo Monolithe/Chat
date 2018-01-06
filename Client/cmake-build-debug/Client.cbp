@@ -84,13 +84,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Client/chat_message.c">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Client/chat_message.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Client/connection.c">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Client/connection.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="/home/maxime/Programmes/C/Chat/Client/main.c">
-			<Option target="Client"/>
-		</Unit>
-		<Unit filename="/home/maxime/Programmes/C/Chat/Client/socket.c">
-			<Option target="Client"/>
-		</Unit>
-		<Unit filename="/home/maxime/Programmes/C/Chat/Client/socket.h">
 			<Option target="Client"/>
 		</Unit>
 		<Unit filename="/home/maxime/Programmes/C/Chat/Client/CMakeLists.txt">
