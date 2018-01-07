@@ -99,6 +99,18 @@
 		<Unit filename="/home/maxime/Programmes/C/Chat/Client/main.c">
 			<Option target="Client"/>
 		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/data.c">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/data.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/input.c">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/input.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="/home/maxime/Programmes/C/Chat/Client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

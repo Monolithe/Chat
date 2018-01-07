@@ -4,10 +4,21 @@
 CMakeFiles/Client.dir/chat_message.c.o: ../chat_message.c
 CMakeFiles/Client.dir/chat_message.c.o: ../chat_message.h
 CMakeFiles/Client.dir/chat_message.c.o: ../connection.h
+CMakeFiles/Client.dir/chat_message.c.o: /home/maxime/Programmes/C/Chat/Server/data.h
 
 CMakeFiles/Client.dir/connection.c.o: ../connection.c
 CMakeFiles/Client.dir/connection.c.o: ../connection.h
+CMakeFiles/Client.dir/connection.c.o: /home/maxime/Programmes/C/Chat/Server/data.h
+
+CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/data.c.o: /home/maxime/Programmes/C/Chat/Server/data.c
+CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/data.c.o: /home/maxime/Programmes/C/Chat/Server/data.h
+
+CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/input.c.o: /home/maxime/Programmes/C/Chat/Server/input.c
+CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/input.c.o: /home/maxime/Programmes/C/Chat/Server/input.h
 
 CMakeFiles/Client.dir/main.c.o: ../connection.h
+CMakeFiles/Client.dir/main.c.o: ../data.h
+CMakeFiles/Client.dir/main.c.o: ../input.h
 CMakeFiles/Client.dir/main.c.o: ../main.c
+CMakeFiles/Client.dir/main.c.o: /home/maxime/Programmes/C/Chat/Server/data.h
 

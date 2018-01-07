@@ -177,6 +177,60 @@ connection.c.s:
 	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/connection.c.s
 .PHONY : connection.c.s
 
+home/maxime/Programmes/C/Chat/Server/data.o: home/maxime/Programmes/C/Chat/Server/data.c.o
+
+.PHONY : home/maxime/Programmes/C/Chat/Server/data.o
+
+# target to build an object file
+home/maxime/Programmes/C/Chat/Server/data.c.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/data.c.o
+.PHONY : home/maxime/Programmes/C/Chat/Server/data.c.o
+
+home/maxime/Programmes/C/Chat/Server/data.i: home/maxime/Programmes/C/Chat/Server/data.c.i
+
+.PHONY : home/maxime/Programmes/C/Chat/Server/data.i
+
+# target to preprocess a source file
+home/maxime/Programmes/C/Chat/Server/data.c.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/data.c.i
+.PHONY : home/maxime/Programmes/C/Chat/Server/data.c.i
+
+home/maxime/Programmes/C/Chat/Server/data.s: home/maxime/Programmes/C/Chat/Server/data.c.s
+
+.PHONY : home/maxime/Programmes/C/Chat/Server/data.s
+
+# target to generate assembly for a file
+home/maxime/Programmes/C/Chat/Server/data.c.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/data.c.s
+.PHONY : home/maxime/Programmes/C/Chat/Server/data.c.s
+
+home/maxime/Programmes/C/Chat/Server/input.o: home/maxime/Programmes/C/Chat/Server/input.c.o
+
+.PHONY : home/maxime/Programmes/C/Chat/Server/input.o
+
+# target to build an object file
+home/maxime/Programmes/C/Chat/Server/input.c.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/input.c.o
+.PHONY : home/maxime/Programmes/C/Chat/Server/input.c.o
+
+home/maxime/Programmes/C/Chat/Server/input.i: home/maxime/Programmes/C/Chat/Server/input.c.i
+
+.PHONY : home/maxime/Programmes/C/Chat/Server/input.i
+
+# target to preprocess a source file
+home/maxime/Programmes/C/Chat/Server/input.c.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/input.c.i
+.PHONY : home/maxime/Programmes/C/Chat/Server/input.c.i
+
+home/maxime/Programmes/C/Chat/Server/input.s: home/maxime/Programmes/C/Chat/Server/input.c.s
+
+.PHONY : home/maxime/Programmes/C/Chat/Server/input.s
+
+# target to generate assembly for a file
+home/maxime/Programmes/C/Chat/Server/input.c.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/input.c.s
+.PHONY : home/maxime/Programmes/C/Chat/Server/input.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -219,6 +273,12 @@ help:
 	@echo "... connection.o"
 	@echo "... connection.i"
 	@echo "... connection.s"
+	@echo "... home/maxime/Programmes/C/Chat/Server/data.o"
+	@echo "... home/maxime/Programmes/C/Chat/Server/data.i"
+	@echo "... home/maxime/Programmes/C/Chat/Server/data.s"
+	@echo "... home/maxime/Programmes/C/Chat/Server/input.o"
+	@echo "... home/maxime/Programmes/C/Chat/Server/input.i"
+	@echo "... home/maxime/Programmes/C/Chat/Server/input.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

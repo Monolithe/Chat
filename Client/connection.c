@@ -86,18 +86,18 @@ data *recv_data(connection *_connection) {
     else {
         data *res = malloc(sizeof(data));
         res->size = 0;
-        res->buffer = calloc(100, 1);
-        char buffer[100] = {'\0'};
-        ssize_t n = sizeof buffer - 1;
+        res->buffer = calloc(RECEIVED_SIZE, 1);
+        char buffer[RECEIVED_SIZE] = {'\0'};
+        ssize_t n = 0;
         size_t c = 0;
 
         do {
             n = recv(_connection->sock, buffer, sizeof buffer - 1, 0);
 
-
             for (ssize_t i = 0; i < n; i++) {
                 res->buffer[c + i] = buffer[i];
             }
+
 
             c += n;
 

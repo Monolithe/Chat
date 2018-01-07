@@ -96,7 +96,25 @@
 		<Unit filename="/home/maxime/Programmes/C/Chat/Server/connection.h">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/data.c">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/data.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/input.c">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/input.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/home/maxime/Programmes/C/Chat/Server/main.c">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/server.c">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/maxime/Programmes/C/Chat/Server/server.h">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/maxime/Programmes/C/Chat/Server/CMakeLists.txt">

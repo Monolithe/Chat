@@ -129,11 +129,86 @@ CMakeFiles/Server.dir/chat_message.c.o.provides: CMakeFiles/Server.dir/chat_mess
 CMakeFiles/Server.dir/chat_message.c.o.provides.build: CMakeFiles/Server.dir/chat_message.c.o
 
 
+CMakeFiles/Server.dir/data.c.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/data.c.o: ../data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Programmes/C/Chat/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Server.dir/data.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Server.dir/data.c.o   -c /home/maxime/Programmes/C/Chat/Server/data.c
+
+CMakeFiles/Server.dir/data.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Server.dir/data.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maxime/Programmes/C/Chat/Server/data.c > CMakeFiles/Server.dir/data.c.i
+
+CMakeFiles/Server.dir/data.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Server.dir/data.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maxime/Programmes/C/Chat/Server/data.c -o CMakeFiles/Server.dir/data.c.s
+
+CMakeFiles/Server.dir/data.c.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/data.c.o.requires
+
+CMakeFiles/Server.dir/data.c.o.provides: CMakeFiles/Server.dir/data.c.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/data.c.o.provides.build
+.PHONY : CMakeFiles/Server.dir/data.c.o.provides
+
+CMakeFiles/Server.dir/data.c.o.provides.build: CMakeFiles/Server.dir/data.c.o
+
+
+CMakeFiles/Server.dir/input.c.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/input.c.o: ../input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Programmes/C/Chat/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Server.dir/input.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Server.dir/input.c.o   -c /home/maxime/Programmes/C/Chat/Server/input.c
+
+CMakeFiles/Server.dir/input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Server.dir/input.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maxime/Programmes/C/Chat/Server/input.c > CMakeFiles/Server.dir/input.c.i
+
+CMakeFiles/Server.dir/input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Server.dir/input.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maxime/Programmes/C/Chat/Server/input.c -o CMakeFiles/Server.dir/input.c.s
+
+CMakeFiles/Server.dir/input.c.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/input.c.o.requires
+
+CMakeFiles/Server.dir/input.c.o.provides: CMakeFiles/Server.dir/input.c.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/input.c.o.provides.build
+.PHONY : CMakeFiles/Server.dir/input.c.o.provides
+
+CMakeFiles/Server.dir/input.c.o.provides.build: CMakeFiles/Server.dir/input.c.o
+
+
+CMakeFiles/Server.dir/server.c.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/server.c.o: ../server.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/maxime/Programmes/C/Chat/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Server.dir/server.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Server.dir/server.c.o   -c /home/maxime/Programmes/C/Chat/Server/server.c
+
+CMakeFiles/Server.dir/server.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Server.dir/server.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/maxime/Programmes/C/Chat/Server/server.c > CMakeFiles/Server.dir/server.c.i
+
+CMakeFiles/Server.dir/server.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Server.dir/server.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/maxime/Programmes/C/Chat/Server/server.c -o CMakeFiles/Server.dir/server.c.s
+
+CMakeFiles/Server.dir/server.c.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/server.c.o.requires
+
+CMakeFiles/Server.dir/server.c.o.provides: CMakeFiles/Server.dir/server.c.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server.c.o.provides.build
+.PHONY : CMakeFiles/Server.dir/server.c.o.provides
+
+CMakeFiles/Server.dir/server.c.o.provides.build: CMakeFiles/Server.dir/server.c.o
+
+
 # Object files for target Server
 Server_OBJECTS = \
 "CMakeFiles/Server.dir/main.c.o" \
 "CMakeFiles/Server.dir/connection.c.o" \
-"CMakeFiles/Server.dir/chat_message.c.o"
+"CMakeFiles/Server.dir/chat_message.c.o" \
+"CMakeFiles/Server.dir/data.c.o" \
+"CMakeFiles/Server.dir/input.c.o" \
+"CMakeFiles/Server.dir/server.c.o"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
@@ -141,9 +216,12 @@ Server_EXTERNAL_OBJECTS =
 Server: CMakeFiles/Server.dir/main.c.o
 Server: CMakeFiles/Server.dir/connection.c.o
 Server: CMakeFiles/Server.dir/chat_message.c.o
+Server: CMakeFiles/Server.dir/data.c.o
+Server: CMakeFiles/Server.dir/input.c.o
+Server: CMakeFiles/Server.dir/server.c.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxime/Programmes/C/Chat/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maxime/Programmes/C/Chat/Server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +232,9 @@ CMakeFiles/Server.dir/build: Server
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/main.c.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/connection.c.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/chat_message.c.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/data.c.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/input.c.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server.c.o.requires
 
 .PHONY : CMakeFiles/Server.dir/requires
 

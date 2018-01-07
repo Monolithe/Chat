@@ -5,6 +5,11 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include "../Client/data.h"
+
+#define RECEIVED_SIZE 100
+#define QUEUE 5
+
 #ifdef WIN32
 
 #include <winsock2.h>
@@ -39,15 +44,11 @@ typedef struct {
     SOCKET sock;
     SOCKADDR_IN sin;
     bool opened;
+    bool any;
 } connection;
 
-typedef struct {
-    char *buffer;
-    size_t size;
-} data;
-
 void init(void);
-connection* set_connection(const char *hostname, uint32_t port);
+connection* set_connection(const char *hostname, uint16_t port);
 void start_connection(connection *_connection);
 void send_data(connection *_connection, data *buffer);
 data* recv_data(connection *_connection);

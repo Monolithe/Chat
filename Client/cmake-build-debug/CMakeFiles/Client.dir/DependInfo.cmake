@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/maxime/Programmes/C/Chat/Client/chat_message.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/chat_message.c.o"
   "/home/maxime/Programmes/C/Chat/Client/connection.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/connection.c.o"
+  "/home/maxime/Programmes/C/Chat/Server/data.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/data.c.o"
+  "/home/maxime/Programmes/C/Chat/Server/input.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/input.c.o"
   "/home/maxime/Programmes/C/Chat/Client/main.c" "/home/maxime/Programmes/C/Chat/Client/cmake-build-debug/CMakeFiles/Client.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

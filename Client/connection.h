@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include "../Server/data.h"
+
+#define RECEIVED_SIZE 100
+
 #ifdef WIN32
 
 #include <winsock2.h>
@@ -40,11 +44,6 @@ typedef struct {
     SOCKADDR_IN sin;
     bool opened;
 } connection;
-
-typedef struct {
-    char *buffer;
-    size_t size;
-} data;
 
 void init(void);
 connection* set_connection(const char *hostname, uint32_t port);

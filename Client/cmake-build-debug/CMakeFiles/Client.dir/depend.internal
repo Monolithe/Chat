@@ -5,9 +5,20 @@ CMakeFiles/Client.dir/chat_message.c.o
  /home/maxime/Programmes/C/Chat/Client/chat_message.c
  /home/maxime/Programmes/C/Chat/Client/chat_message.h
  /home/maxime/Programmes/C/Chat/Client/connection.h
+ /home/maxime/Programmes/C/Chat/Server/data.h
 CMakeFiles/Client.dir/connection.c.o
  /home/maxime/Programmes/C/Chat/Client/connection.c
  /home/maxime/Programmes/C/Chat/Client/connection.h
+ /home/maxime/Programmes/C/Chat/Server/data.h
+CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/data.c.o
+ /home/maxime/Programmes/C/Chat/Server/data.c
+ /home/maxime/Programmes/C/Chat/Server/data.h
+CMakeFiles/Client.dir/home/maxime/Programmes/C/Chat/Server/input.c.o
+ /home/maxime/Programmes/C/Chat/Server/input.c
+ /home/maxime/Programmes/C/Chat/Server/input.h
 CMakeFiles/Client.dir/main.c.o
  /home/maxime/Programmes/C/Chat/Client/connection.h
+ /home/maxime/Programmes/C/Chat/Client/data.h
+ /home/maxime/Programmes/C/Chat/Client/input.h
  /home/maxime/Programmes/C/Chat/Client/main.c
+ /home/maxime/Programmes/C/Chat/Server/data.h

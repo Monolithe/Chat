@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 #include "connection.h"
+#include "../Server/data.h"
 
 #define PSEUDO_SIZE 26
 

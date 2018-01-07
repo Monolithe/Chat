@@ -17,11 +17,11 @@ void init(void) {
 
 /**
  * Create a connection
- * @param hostname Hostname
+ * @param hostname Hostname or "ANY"
  * @param port Port
  * @return The new connection
  */
-connection *set_connection(const char *hostname, uint32_t port) {
+connection *set_connection(const char *hostname, uint16_t port) {
     connection *new = malloc(sizeof(connection));
     new->opened = false;
 
@@ -32,17 +32,27 @@ connection *set_connection(const char *hostname, uint32_t port) {
         exit(errno);
     }
 
-    struct hostent *hostinfo = NULL;
+    if (strcmp(hostname, "ANY") == 0) {
+        new->sin.sin_addr.s_addr = htonl(INADDR_ANY);
+        new->sin.sin_family = AF_INET;
+        new->sin.sin_port = htons(port);
+        new->any = true;
+    }
+    else {
+        new->any = false;
+        struct hostent *hostinfo = NULL;
 
-    hostinfo = gethostbyname(hostname);
-    if (hostinfo == NULL) {
-        fprintf(stderr, "Unknow host %s\n", hostname);
-        exit(EXIT_FAILURE);
+        hostinfo = gethostbyname(hostname);
+        if (hostinfo == NULL) {
+            fprintf(stderr, "Unknow host %s\n", hostname);
+            exit(EXIT_FAILURE);
+        }
+        new->sin.sin_addr = *(IN_ADDR *) hostinfo->h_addr;
+        new->sin.sin_port = htons(port);
+        new->sin.sin_family = AF_INET;
     }
 
-    new->sin.sin_addr = *(IN_ADDR *) hostinfo->h_addr;
-    new->sin.sin_port = htons(port);
-    new->sin.sin_family = AF_INET;
+    return new;
 }
 
 /**
@@ -50,7 +60,18 @@ connection *set_connection(const char *hostname, uint32_t port) {
  * @param _connection The connection to init
  */
 void start_connection(connection *_connection) {
-    if (connect(_connection->sock, (SOCKADDR *) &(_connection->sin), sizeof(SOCKADDR)) == SOCKET_ERROR) {
+    if (_connection->any) {
+        if (bind(_connection->sock, (SOCKADDR *) &(_connection->sin), sizeof _connection->sin) == SOCKET_ERROR) {
+            perror("bind()");
+            exit(errno);
+        }
+        if(listen(_connection->sock, QUEUE) == SOCKET_ERROR)
+        {
+            perror("listen()");
+            exit(errno);
+        }
+    }
+    else if (connect(_connection->sock, (SOCKADDR *) &(_connection->sin), sizeof(SOCKADDR)) == SOCKET_ERROR) {
         perror("connect()");
         exit(errno);
     }
@@ -86,18 +107,18 @@ data *recv_data(connection *_connection) {
     else {
         data *res = malloc(sizeof(data));
         res->size = 0;
-        res->buffer = calloc(100, 1);
-        char buffer[100] = {'\0'};
-        ssize_t n = sizeof buffer - 1;
+        res->buffer = calloc(RECEIVED_SIZE, 1);
+        char buffer[RECEIVED_SIZE] = {'\0'};
+        ssize_t n = 0;
         size_t c = 0;
 
         do {
             n = recv(_connection->sock, buffer, sizeof buffer - 1, 0);
 
-
             for (ssize_t i = 0; i < n; i++) {
                 res->buffer[c + i] = buffer[i];
             }
+
 
             c += n;
 
@@ -121,12 +142,12 @@ data *recv_data(connection *_connection) {
 
 /**
  * Close the connection
- * @param _conn Connection to close
+ * @param _connection Connection to close
  */
-void close_connection(connection *_conn) {
-    if (_conn != NULL && _conn->opened) {
-        shutdown(_conn->sock, 2);
-        free(_conn);
-        _conn->opened = false;
+void close_connection(connection *_connection) {
+    if (_connection != NULL && _connection->opened) {
+        closesocket(_connection->sock);
+        free(_connection);
+        _connection->opened = false;
     }
 }

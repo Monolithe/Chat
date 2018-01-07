@@ -177,6 +177,60 @@ connection.c.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/connection.c.s
 .PHONY : connection.c.s
 
+data.o: data.c.o
+
+.PHONY : data.o
+
+# target to build an object file
+data.c.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/data.c.o
+.PHONY : data.c.o
+
+data.i: data.c.i
+
+.PHONY : data.i
+
+# target to preprocess a source file
+data.c.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/data.c.i
+.PHONY : data.c.i
+
+data.s: data.c.s
+
+.PHONY : data.s
+
+# target to generate assembly for a file
+data.c.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/data.c.s
+.PHONY : data.c.s
+
+input.o: input.c.o
+
+.PHONY : input.o
+
+# target to build an object file
+input.c.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/input.c.o
+.PHONY : input.c.o
+
+input.i: input.c.i
+
+.PHONY : input.i
+
+# target to preprocess a source file
+input.c.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/input.c.i
+.PHONY : input.c.i
+
+input.s: input.c.s
+
+.PHONY : input.s
+
+# target to generate assembly for a file
+input.c.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/input.c.s
+.PHONY : input.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -204,6 +258,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/main.c.s
 .PHONY : main.c.s
 
+server.o: server.c.o
+
+.PHONY : server.o
+
+# target to build an object file
+server.c.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server.c.o
+.PHONY : server.c.o
+
+server.i: server.c.i
+
+.PHONY : server.i
+
+# target to preprocess a source file
+server.c.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server.c.i
+.PHONY : server.c.i
+
+server.s: server.c.s
+
+.PHONY : server.s
+
+# target to generate assembly for a file
+server.c.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server.c.s
+.PHONY : server.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,9 +300,18 @@ help:
 	@echo "... connection.o"
 	@echo "... connection.i"
 	@echo "... connection.s"
+	@echo "... data.o"
+	@echo "... data.i"
+	@echo "... data.s"
+	@echo "... input.o"
+	@echo "... input.i"
+	@echo "... input.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
 .PHONY : help
 
 
